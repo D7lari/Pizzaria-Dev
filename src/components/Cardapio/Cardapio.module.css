@@ -1,0 +1,83 @@
+.cardapio{
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+.titulo{
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+.subtitulo{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px;
+    max-width: 340px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+.imagem{
+
+    background-color: #FFF0E0;
+    font-size: 80px;
+    text-align: center;
+    padding: 24px;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.categoria{
+    font-size: 12px;
+    font-weight: 600;
+    color: #E85D04;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nome{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+.descricao{
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+.preco{
+    font-size: 20px;
+    font-weight: 700;
+    color: #E85D04;
+}
+.botao{
+    background-color: #E85D04;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.botao:hover{
+    background-color: #c44d03;
+}

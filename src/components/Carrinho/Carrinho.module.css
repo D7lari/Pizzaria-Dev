@@ -1,0 +1,184 @@
+.carrinho{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.fechar{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666666;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.fechar:hover{
+    background-color: #f5f5f5;
+}
+
+.vazio{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #666666;
+    font-size: 15px;
+}
+
+.vazioBotao{
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.itens{
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: #FFF8F0;
+    border-radius: 12px;
+}
+
+.itemImagem{
+    font-size: 32px;
+}
+
+.itemInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.itemNome{
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.itemPreco{
+    font-size: 14px;
+    color: #E85D04;
+    font-weight: 600;
+}
+
+.itemQuantidade{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemQuantidade button{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemQuantidade button:hover{
+    background-color: #f5f5f5;
+}
+
+.itemRemover{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+.itemRemover:hover {
+    opacity: 1;
+}
+
+.rodape{
+    padding: 24px;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.totalValor{
+    font-size: 22px;
+    color: #E85D04;
+}
+
+.botaoFinalizar{
+    background-color: #E85D04;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.botaoFinalizar:hover {
+    background-color: #C44D03;
+}
+
+.botaoLimpar{
+    background: none;
+    border: 1px solid #dddddd;
+    color: #666666;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.botaoLimpar:hover {
+    border-color: #E85D04;
+    color: #E85D04;
+}
+

@@ -1,0 +1,66 @@
+.header{
+    background-color: #ffffff;
+    border-bottom: 2px solid #FFF0E0;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-sizing: 0 2px 8px rgba(0, 0, 0, 0.06 );
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoIcone{
+    font-size: 40px;
+}
+
+.logoNome{
+    font-size: 22px;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+.logoslogn{
+    font-size: 13px;
+    color: #666666;
+}
+
+.botaoCarrinho{
+    position: relative;
+    background-color: #E85D04;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botaoCarrinho:hover{
+    background-color: #C44D03;
+}
+
+.badge{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
