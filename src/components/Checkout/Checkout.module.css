@@ -1,0 +1,113 @@
+.checkout {
+    position: fixed;
+    top:0;
+    right:0;
+    width: 400px;
+    height:100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 24px;
+    gap: 24px;
+    overflow-y: auto;
+}
+
+.cabecalho{
+    display:flex;
+    align-items:center;
+    gap: 16px;
+}
+
+.voltar{
+    background: none;
+    border: none;
+    color:#E85D04;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.voltar:hover{
+    text-decoration: underline;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 700;
+    color:#1a1a1a;
+}
+.resumo{
+    background-color: #FFF8F0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.itens{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.itemImagem{
+    font-size: 24px;
+}
+.itemNome{
+    flex:1;
+    font-size:14px;
+    color:#E85D04;
+}
+.itemPreco{
+    font-size:14px;
+    font-weight: 700;
+    color:#E85D04
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:16px;
+    border-top: 1px solid #eeeeee;
+    font-size: 16px;
+    font-weight: 700;
+    color:#1a1a1a
+}
+
+.totalValor{
+    font-size:22px;
+    color:#E85D04;
+}
+.erro{
+    background-color: #FFE2E2;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.botaoPagar{
+    background-color:#009EE3;
+    color:#ffffff;
+    padding: 16px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.botaoPagar:hover{
+    background-color:#0080B3;
+}
+
+.botaoPagar:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}

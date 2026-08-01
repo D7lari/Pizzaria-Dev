@@ -1,7 +1,7 @@
 import { useCarrinho } from "../../context/CarrinhoContext"
 import styles from "./Carrinho.module.css"
 
-function Carrinho({ onFechar }) {
+function Carrinho({ onFechar, onFinalizar }) {
     const { itens, removerItem, alterarQuantidade, total, limparCarrinho } = useCarrinho()
 
     if (itens.length === 0) {
@@ -61,7 +61,7 @@ function Carrinho({ onFechar }) {
                     <span>Total</span>
                     <span className={styles.totalValor}> R$ {total.toFixed(2)}</span>
                 </div>
-                <button className={styles.botaoFinalizar}>
+                <button className={styles.botaoFinalizar} onClick={onFinalizar}>
                     Finalizar Pedido
                 </button>
                 <button className={styles.botaoLimpar} onClick={limparCarrinho}>
